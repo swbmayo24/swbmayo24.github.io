@@ -1,0 +1,160 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <head>
+    <title>The Survey!</title>
+    <h1 id="title">The Survey!</h1> <!-- #1 -->
+    <description><p id="description">This is where you take a <em>very</em> important survey.</p></description> <!-- #2 -->
+  </head>
+  <body>
+    <form id="survey-form"> <!-- #3 -->
+      <fieldset>
+        <h3>Boring Info</h3>
+        <label id="name-label"><p>Enter your name: <input class="first-section" id="name" type="text" placeholder="Name" required></p>
+        </label> <!-- #4 #10 #11 -->
+        <label id="email-label"><p>Enter your email: <input class="first-section" id="email" type="email" placeholder="Email" required></p>
+        </label> <!-- #5 #6 #10 #11 -->
+        <label id="number-label"><p>Enter a number: <input id="number" type="number" min="0" max="120" placeholder="0 - 120"></p>
+        </label> <!-- #7 #8 #9 #10 #11 -->
+      </fieldset>
+
+      <fieldset>
+        <h3>The Real Survey</h3>
+        <label>Is pinocchio a real boy? 
+          <select id="dropdown">
+            <option>(pick one)</option>
+            <option>Yes</option>
+            <option>No</option>
+            <option>She's a girl</option>
+            <option>They're non-binary</option>
+            <option>The question is flawed, so I won't deign to answer it</option>
+          </select>
+        </label> <!-- #12 --> <br>
+        <label id="Cinderella">Is Cinderella the bad guy?
+          <input type="radio" name="Cinderella" id="Cinderella" value="Yes">Yes
+          <input type="radio" name="Cinderella" id="Cinderella" value="No">No
+          <input type="radio" name="Cinderella" id="Cinderella" value="Unsure">Unsure
+        </label> <!-- #13 -->
+      </fieldset>
+      <fieldset>
+        <h3>The Terms</h3>
+        <label id="terms-and-conditions"><input value="terms-and-conditions" id="terms-and-conditions" type="checkbox" required> I agree to the terms and conditions.
+        </label> <br>
+        <label id="cheating-policy"><input value="cheating-policy" type="checkbox" id="cheating-policy" required> I have not copied the work of any other person nor have I asked an AI bot to complete this for me.
+        </label> <br>
+        <label id="third-thing"><input value="third-thing" type="checkbox" id="third-thing" required> Some third thing that you are required to click.
+        </label> <!-- #14 --> <br>
+      </fieldset>
+
+      <fieldset>
+        <h3>Additional Comments<h3>
+        <label id="additional-comments">
+          <textarea>
+          </textarea> <!-- #15 -->
+        </label>
+      </fieldset>
+      <input id="submit" value="Submit" type="submit"></button>
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 90%;
+  height: 100vh;
+  margin: 1em;
+  background-color: #E0D9FF;
+  color: #151560;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  margin: .5em auto;
+  text-align: center;
+}
+
+description {
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  width: 80vw;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem 0;
+  border-bottom: 2px solid #6060A0
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+h3 {
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+label{
+  display: block;
+  margin: .1rem 0;
+}
+
+.first-section {
+  margin: 5px 0 0 0;
+  width: 50%;
+  min-height: 2em;
+}
+
+input, textarea, select {
+  background-color: #D1D1FF;
+  color: #151560;
+  border-color: #10103A;
+}
+
+input[type="radio"]{
+  width: 5%;
+  margin: 0 -.4em .2em 0;
+  vertical-align: middle;
+}
+
+input[type="checkbox"] {
+  width: unset;
+  margin: 0 0 .2em 0;
+  vertical-align: middle;
+}
+
+textarea{
+  width: 100%;
+  height: 75px;
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 25%;
+  margin: 1em auto;
+  margin-top: 0px;
+  height: 2em;
+  font-size: 1em;
+  background-color: #6060A0;
+  color: #E1E1FF;
+  border-color: #E1E1FF;
+  min-width: 150px;
+}
+
+** end of undefined **
