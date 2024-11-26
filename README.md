@@ -1,1 +1,1 @@
-Go to [here](https://swbmayo24.github.io/){:target="_blank"} to see my portfolio website!
+Click <a href="https://swbmayo24.github.io/" target="_blank">here</a> to see my portfolio website!
