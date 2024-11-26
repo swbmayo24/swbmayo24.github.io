@@ -16,6 +16,10 @@
   padding: 0;
 }
 
+head {
+  display: none;
+}
+
 /*11*/
 nav {
   position: fixed;
