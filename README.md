@@ -1,1 +1,1 @@
-This is an intro to my work.
+Go to https://swbmayo24.github.io/ to see my portfolio website!
